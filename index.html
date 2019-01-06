@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+       <link rel="stylesheet" href="lib/bootstrap-4.1.1/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#mohtava1 ").click(function() {
+                alert("id ="+ $("#table").text());
+            });
+            $("#mohtava2 ").click(function() {
+                alert($("#table2").text());
+            });
+            $("#mohtava3 ").click(function() {
+                alert($("#table3").text());
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <table class="table" id="db">
+        <tbody >
+        <tr >
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Family</th>
+            <th scope="col">sen</th>
+            <th scope="col">age</th>
+        </tr>
+
+
+        <tr id="table">
+
+                <th scope="row" id="tb">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>12</td>
+                <td>men</td>
+                <td><button id="mohtava1" class="btn btn-danger btn-sm ">جزییات</button></td>
+        </tr>
+        <tr id="table2" >
+
+                <th scope="row" >2</th>
+                <td>keyvan</td>
+                <td>Niazmand</td>
+                <td>28</td>
+                <td>men</td>
+
+            <td><button id="mohtava2" class="btn btn-danger btn-sm">جزییات</button></td>
+        </tr>
+        <tr id="table3">
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>25</td>
+                <td>woman</td>
+            <td><button id="mohtava3" class="btn btn-danger btn-sm">جزییات</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <h1>hello</h1>
+
+</div>
+
+
+</body>
+</html>
